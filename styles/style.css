@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+
+/* Global CSS variables for a customizable color scheme */
+:root {
+  --primary-color: #333872;
+  --secondary-color: #f4f4f9;
+  --accent-color: #f28a30;
+  --text-color: #333;
+  --background-color: #ffffff;
+}
+
+/* Body styling for a centered and responsive layout with a background image */
+body {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
+  line-height: 1.5;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  background-image: url(../assets/background.jpeg);
+  background-size: cover;
+  background-position: center;
+  margin-top: 13%;
+}
+
+/* Styling for a main container with a modern and translucent design */
+.main {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  flex-direction: row;
+  gap: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 45px;
+  padding-right: 45px;
+  border-radius: 25px;
+  border: 2px solid var(--primary-color);
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0px 0px 50px 50px rgba(0, 0, 0, 0.1);
+  width:800px;
+  justify-content:space-between;
+}
+
+/* Styling for a name input container */
+.input-name {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+  gap: 5px;
+}
+
+/* Styling for a button group container */
+.button-group {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 10px;
+}
+
+/* Styling for a general button */
+.btn {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border: none;
+
+  border-radius: 15px;
+  padding: 15px 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+/* Styling for an input with the id "name" */
+#name {
+  border-radius: 8px;
+  background-color: #ffffff;
+  border: none;
+  padding: 5px;
+}
+
+/* Styling for a radio group container */
+.radio-group {
+  padding-bottom: 21px;
+}
+
+/* Hover effect for the general button */
+.btn:hover {
+  background-color: var(--accent-color);
+  font-weight: bold;
+}
+
+/* Styling for an element with the id "clear" */
+#clear {
+  width: 70%;
+}
+
+/* Styling for a saved answer area container */
+.saved-answer-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  border: 2px dashed gray;
+  padding: 10px;
+  width:370px;
+}
+
+/* Styling for heading elements (h1, h2, h3, h4, h5, h6) */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  margin: 0.5em 0;
+}
+
+/* Styling for paragraph elements */
+p {
+  margin: 0 0 1em;
+}
+
+/* Styling for an error message with the id "error" */
+#error {
+  display: none;
+  color: white;
+  background-color: red;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+/* Styling to make the error message with class "visible" visible */
+#error.visible {
+  display: block;
+}
+
+/* Responsive styling for screens with a maximum width of 768px */
+@media (max-width: 768px) {
+  .main {
+    flex-direction: column;
+  }
+
+  .btn {
+    width: 100%; /* Full width for better mobile usability */
+  }
+
+  #clear {
+    width: 100%;
+  }
+}
