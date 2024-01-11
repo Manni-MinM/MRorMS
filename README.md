@@ -1,2 +1,2 @@
 # MRorMS
-[Live Demo](https://github.com/Manni-MinM)
+[Live Demo](https://manni-minm.github.io/MRorMS/)
